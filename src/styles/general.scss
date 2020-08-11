@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+@mixin ff($ff, $ff-size, $ff-weight: 400) {
+    font-family: $ff;
+    font-size: $ff-size;
+    font-weight: $ff-weight;
+}
+
+$clr-input: #e9ecef;
+$clr-text: #495057;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+    @media screen and (max-width: 544px){
+        margin: 0;
+    }
+}
+
+input, select, button {
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: lighten(red, 10%);
+    padding-top: .5rem;
+    @include ff('Roboto', .8rem);
+}
+
+.col {
+    &-3 {
+        @media screen and (max-width: 750px){
+            width: 100%;
+        }
+        @media screen and (min-width: 751px){
+            width: 11rem;
+        }
+        @media screen and (min-width: 975px){
+            width: 15rem;
+        }
+        @media screen and (min-width: 1185px){
+            width: 17rem;
+        }
+    }
+    &-2 {
+        @media screen and (max-width: 750px){
+            width: 100%;
+        }
+        @media screen and (min-width: 751px){
+            width: 22rem;
+        }
+        @media screen and (min-width: 975px){
+            width: 30rem;
+        }
+        @media screen and (min-width: 1185px){
+            width: 34rem;
+        }
+    }
+    &-1 {
+        @media screen and (max-width: 750px){
+            width: 100%;
+        }
+        @media screen and (min-width: 751px){
+            width: 33rem;
+        }
+        @media screen and (min-width: 975px){
+            width: 45rem;
+        }
+        @media screen and (min-width: 1185px){
+            width: 51rem;
+        }
+    }
+}
