@@ -1,4 +1,4 @@
-# task1
+# Simple form based on vue.js
 
 ## Project setup
 ```
